@@ -75,7 +75,6 @@ func ResourceProject() *schema.Resource {
 			},
 			"work_item_template": {
 				Type:             schema.TypeString,
-				ForceNew:         true,
 				Optional:         true,
 				ValidateFunc:     validation.StringIsNotWhiteSpace,
 				DiffSuppressFunc: suppress.CaseDifference,
